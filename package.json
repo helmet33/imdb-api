@@ -1,0 +1,22 @@
+{
+  "name": "exercise-imdb-api",
+  "version": "1.0.0",
+  "description": "https://github.com/gmit-linked-data/imdb-api",
+  "main": "imdb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmit-linked-data/imdb-api.git"
+  },
+  "author": "Ian McLoughlin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gmit-linked-data/imdb-api/issues"
+  },
+  "homepage": "https://github.com/gmit-linked-data/imdb-api#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
