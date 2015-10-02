@@ -19,16 +19,5 @@ app.get('/movie/id/:id', function(req, res) {
   res.json(data[req.params.id]);
 });
 
-// Send back the JSON for the movies from year i at /movie/year/i.
-app.get('/movie/year/:year', function(req, res) {
-  movies = [];
-  
-  for (var i = 0; i < data.length; i++)
-    if (data[i].year == req.params.year)
-      movies.push(data[i]);
-  
-  res.json(movies);
-});
-
 // Start the server.
 var server = app.listen(8000);
