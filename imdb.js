@@ -19,5 +19,18 @@ app.get('/movie/id/:id', function(req, res) {
   res.json(data[req.params.id]);
 });
 
+// Films by year. Parameterised, pushes matches onto array
+// and returns resultant array as json.
+app.get('/movie/year/:yr', function(req, res) {
+  movs = [];
+  
+  for (var i = 0; i < data.length; i++)
+    if (data[i].year == req.params.yr)
+      movs.push(data[i]);
+  
+  res.json(movs);
+});
+
+
 // Start the server.
 var server = app.listen(8000);
