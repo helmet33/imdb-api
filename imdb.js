@@ -22,7 +22,7 @@ app.get('/movie/id/:id', function(req, res) {
 // Films by year. Parameterised, pushes matches onto array
 // and returns resultant array as json.
 app.get('/movie/year/:yr', function(req, res) {
-  movs = [];
+  var movs = [];
   
   for (var i = 0; i < data.length; i++)
     if (data[i].year == req.params.yr)
